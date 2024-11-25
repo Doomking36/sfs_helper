@@ -1,3 +1,5 @@
+#!/bin/sh
+
 mkdir -p                  \
       /mnt/proc           \
       /mnt/dev            \
