@@ -10,7 +10,6 @@ env CFLAGS="-Os -pipe -march=native" \
             --includedir="/include" \
             --disable-shared --enable-static
 
-# Rule of thumb -j# where # is halve the RAM to avoid OOM
 make -j($nproc)
 make DESTDIR="/mnt/" install
 make distclean
