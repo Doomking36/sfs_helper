@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/xz/
+cd /src/packages/xz*/
 
 env LD="echo" ./configure --prefix=/ --disable-doc --disable-microlzma \
         --disable-lzip-decoder --enable-small --enable-threads=posix \
