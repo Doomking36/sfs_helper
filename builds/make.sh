@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 cd /mnt/src/packages/make*/
 
