@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/sources/ubase/
+
 env CPPFLAGS="-D_FILE_OFFSET_BITS=64 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE" \
     CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
@@ -8,3 +10,5 @@ env CPPFLAGS="-D_FILE_OFFSET_BITS=64 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE" \
     
 make -e PREFIX="/" DESTDIR="/mnt/" install
 make clean
+
+cd -
