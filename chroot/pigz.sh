@@ -2,7 +2,7 @@
 
 cd /src/packages/pigz*/
 
-make -e -j$(nproc)
+make -e -j2
 mv ./pigz /bin/pigz
 ln -s pigz /bin/gzip
 
