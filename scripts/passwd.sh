@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 cat > passwd <<EOF
 root:x:0:0:root:/root:/bin/csh
