@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/pigz/
+cd /src/packages/pigz*/
 
 make -e -j$(nproc)
 mv ./pigz /bin/pigz
