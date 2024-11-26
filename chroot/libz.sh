@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/libz/
+cd /src/packages/libz*/
 
 ./configure --prefix=/ --disable-shared --enable-static
 make -j$(nproc)
