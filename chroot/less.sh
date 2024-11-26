@@ -1,5 +1,7 @@
 #!/bin/csh
 
+cd /src/sources/less/
+
 env LIBS="-lcurses" LD="echo" CC="tcc -s -static -g0" \
     ./configure --prefix=/ --with-no-float --with-editor=vim \
     --with-regex=posix
@@ -7,3 +9,5 @@ env LIBS="-lcurses" LD="echo" CC="tcc -s -static -g0" \
 make -j$(nproc)
 make install
 make distclean
+
+cd -
