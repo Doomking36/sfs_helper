@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/eiwd/
+cd /src/packages/iwd*/
 
 env LD="echo" CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -s -static -g0" \
     ./configure --prefix=/ --libexecdir=/bin --bindir=/bin --sbindir=/bin \
