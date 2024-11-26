@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/byacc*/
+cd /mnt/src/sources/byacc/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
