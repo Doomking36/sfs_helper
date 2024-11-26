@@ -2,7 +2,7 @@
 
 cd src
 
-make -e -j2
+make -e -j$(nproc)
 make NINITBIN=/bin install
 make clean
 
