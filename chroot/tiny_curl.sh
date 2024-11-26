@@ -23,8 +23,8 @@ env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
     --disable-cookies --without-schannel \
     --without-secure-transport
 
-make LDFLAGS="-s -static -all-static -g0" -j($nproc)
-make LDFLAGS="-s -static -all-static -g0" -j($nproc) -i #if an error related with the docs appears you can just ignore it with -i
-make install -j($nproc)
-make clean -j($nproc)
-make distclean -j($nproc)
+make LDFLAGS="-s -static -all-static -g0" -j$(nproc)
+make LDFLAGS="-s -static -all-static -g0" -j$(nproc) -i #if an error related with the docs appears you can just ignore it with -i
+make install -j$(nproc)
+make clean -j$(nproc)
+make distclean -j$(nproc)
