@@ -26,7 +26,6 @@ env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
     --without-secure-transport
 
 make LDFLAGS="-s -static -all-static -g0" -j2
-make LDFLAGS="-s -static -all-static -g0" -j2 -i #if an error related with the docs appears you can just ignore it with -i
 make install -j2
 make clean -j2
 make distclean -j2
