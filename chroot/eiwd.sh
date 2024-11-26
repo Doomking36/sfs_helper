@@ -9,7 +9,7 @@ env LD="echo" CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -s -static 
 
 sed 's/$(LDFLAGS) -o/-all-static $(LDFLAGS) -o/' Makefile > _
 mv -f _ Makefile
-make -j$(nproc)
+make -j2
 make install
 make distclean
 
