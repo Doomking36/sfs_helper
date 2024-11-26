@@ -9,7 +9,7 @@ env LD="echo" ./configure --prefix=/ --disable-doc --disable-microlzma \
         --disable-nls --disable-rpath --without-gnu-ld --disable-shared \
         --without-pic
 
-make LDFLAGS="-s -static -g0 -all-static" -j$(nproc)
+make LDFLAGS="-s -static -g0 -all-static" -j2
 make install
 make distclean
 
