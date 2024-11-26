@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 cat > profile <<EOF
 #!/bin/csh
