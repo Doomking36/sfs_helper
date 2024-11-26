@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/musl/
+cd /mnt/src/packages/musl*/
 
 env CFLAGS="-Os -pipe -march=native" \
     CC="/mnt/src/gcc-toolchain/bin/gcc" \
