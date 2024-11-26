@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/packages/e3*/
+cd /mnt/src/sources/e3/
 
 sed 's/nasm\ -O2/\/mnt\/bin\/nasm\ -O2/' Makefile > _
 mv -f _ Makefile
