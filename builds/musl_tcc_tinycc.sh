@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/tinycc/
+cd /mnt/src/packages/tinycc*/
 
 env CC="/mnt/bin/tcc -s -static -g0 -L/mnt/lib/ -I/mnt/include" \
     LDFLAGS="-s -static -g0" \
