@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/sed/
+cd /mnt/src/packages/sed*/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
