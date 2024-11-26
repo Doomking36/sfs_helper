@@ -11,6 +11,6 @@ env CFLAGS="-Os -pipe -march=native" \
 --cross-prefix="/mnt" --cc="/src/gcc-toolchain/bin/gcc -L/mnt/lib -I/mnt/include -w -s -static -g0" \
 --ar="/src/gcc-toolchain/bin/ar"
 
-make -j($nproc)
+make -j$(nproc)
 make DESTDIR="/mnt" install
 make distclean
