@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/nasm/
+cd /mnt/src/packages/nasm*/
 
 env CC="/mnt/bin/tcc -s -static -g0"   \
     LDFLAGS="-s -static -g0" \
