@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/sources/netbsd*/
+
 sed '514,517d' libcurses/color.c > _
 mv -f _ libcurses/color.c
 
@@ -9,3 +11,5 @@ env CC="/mnt/bin/tcc -s -static -g0 -w" \
 
 make -e PREFIX="/" DESTDIR="/mnt/" LDFLAGS="-s -static -w -g0" install-static
 make clean      
+
+cd -
