@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/packages/dash*/
+
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
     AR="/mnt/bin/tcc -ar" \
@@ -10,3 +12,5 @@ make -j$(nproc)
 make DESTDIR="/mnt/" install
 mv /mnt/bin/dash /mnt/bin/sh
 make distclean
+
+cd -
