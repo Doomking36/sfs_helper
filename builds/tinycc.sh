@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/sources/tinycc/
+
 env CFLAGS="-Os -pipe -march=native" \
     CC="/mnt/src/gcc-toolchain/bin/gcc" \
     LDFLAGS="-s -static -g0 -L/mnt/lib -I/mnt/include -w" \
@@ -14,3 +16,5 @@ env CFLAGS="-Os -pipe -march=native" \
 make -j$(nproc)
 make DESTDIR="/mnt" install
 make distclean
+
+cd -
