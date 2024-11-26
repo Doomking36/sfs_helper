@@ -13,7 +13,7 @@ sed '1 s/ sh/\/bin\/sh/' config.status > _
 mv -f _ ./config.status
 chmod +x ./config.status
 
-make -j($nproc)
-make install -j($nproc)
+make -j$(nproc)
+make install -j$(nproc)
 
 make distclean
