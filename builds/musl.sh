@@ -10,6 +10,6 @@ env CFLAGS="-Os -pipe -march=native" \
             --includedir="/include" \
             --disable-shared --enable-static
 
-make -j($nproc)
+make -j$(nproc)
 make DESTDIR="/mnt/" install
 make distclean
