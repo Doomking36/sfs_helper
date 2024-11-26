@@ -1,7 +1,6 @@
 #!/bin/sh
 
 cat > profile <<EOF
-
 #!/bin/csh
 #PATH
 
