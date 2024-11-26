@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 # Search through directory to extract and delete .gz, .xz, and .zip 
 find . \( -name "*.tar.gz" -o -name "*.tar.xz" -o -name "*.zip" \) -exec sh -c '
