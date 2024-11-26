@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/tiny-curl/
+cd /src/packages/tiny-curl*/
 
 env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
     AR="/src/gcc-toolchain/bin/ar" RANLIB="/src/gcc-toolchain/bin/ranlib" \
