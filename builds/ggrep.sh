@@ -6,7 +6,7 @@ env CC="/mnt/bin/tcc -s -static -g0" \
     RANLIB="echo" ./configure --prefix=/ --disable-nls \
     --disable-rpath --enable-threads=posix --without-gnu-ld
 
-make -j($nproc)
+make -j$(nproc)
 make DESTDIR="../GGREP/" install
 
 mv GGREP/bin/grep /mnt/bin/ggrep
