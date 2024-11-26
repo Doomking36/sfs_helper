@@ -3,7 +3,7 @@
 cd /src/packages/libz*/
 
 ./configure --prefix=/ --disable-shared --enable-static
-make -j$(nproc)
+make -j2
 make install
 make distclean
 
