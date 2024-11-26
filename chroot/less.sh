@@ -1,6 +1,6 @@
 #!/bin/csh
 
-cd /src/sources/less/
+cd /src/packages/less*/
 
 env LIBS="-lcurses" LD="echo" CC="tcc -s -static -g0" \
     ./configure --prefix=/ --with-no-float --with-editor=vim \
