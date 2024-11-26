@@ -1,4 +1,4 @@
-#!/bin/csh
+#!/bin/csh -e
 
 cd /src/sources/BearSSL/
 
