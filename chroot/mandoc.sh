@@ -10,6 +10,6 @@ sed -e 's/=ar/=\"tcc -ar\"/' -e 's/=cc/=\"tcc -s -static -g0\"/'  \
 
 ./configure
 
-make -j($nproc)
+make -j$(nproc)
 make MANDIR=/share/man/ install
 make distclean
