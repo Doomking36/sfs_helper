@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 cat > groups <<EOF
 root:x:0
