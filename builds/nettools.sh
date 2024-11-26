@@ -25,3 +25,5 @@ mv ./NETTOOLS/sbin/* /bin/
 
 rm -r ./NETTOOLS/
 make clean
+
+cd -
