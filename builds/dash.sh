@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/packages/dash*/
+cd /mnt/src/sources/dash/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
