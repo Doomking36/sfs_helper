@@ -1,5 +1,7 @@
 #!/bin/csh
 
+cd /src/sources/e2fsprogs/
+
 env CONFIG_SHELL="sh" LD="echo" RANLIB="echo" \
   ./configure --prefix=/ --sbindir=/bin \
   --sysconfdir=/etc --enable-libuuid --enable-libblkid \
@@ -17,3 +19,5 @@ make -j$(nproc)
 make install -j$(nproc)
 
 make distclean
+
+cd -
