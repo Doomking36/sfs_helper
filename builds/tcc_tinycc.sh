@@ -10,6 +10,6 @@ env CC="/mnt/bin/tcc -s -static -g0 -L/mnt/lib/ -I/mnt/include" \
 --cross-prefix="/mnt" --cc="/bin/tcc -s -static -g0" \
 --ar="/bin/tcc -ar"
 
-make -j($nproc)
+make -j$(nproc)
 make DESTDIR="/mnt" install
 make distclean
