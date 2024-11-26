@@ -1,5 +1,7 @@
 #!/bin/csh
 
+cd /src/sources/eiwd/
+
 env LD="echo" CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -s -static -g0" \
     ./configure --prefix=/ --libexecdir=/bin --bindir=/bin --sbindir=/bin \
     --disable-systemd-service --disable-dbus-policy --disable-dbus --localstatedir=/var \
@@ -10,3 +12,5 @@ mv -f _ Makefile
 make -j$(nproc)
 make install
 make distclean
+
+cd -
