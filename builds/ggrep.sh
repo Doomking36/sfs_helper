@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/src/sources/grep/
+cd /mnt/src/packages/grep*/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
