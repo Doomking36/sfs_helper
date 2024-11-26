@@ -1,5 +1,7 @@
 #!/bin/csh
 
+cd /src/sources/BearSSL/
+
 sed 's/cc/tcc/' conf/Unix.mk > _
 mv -f _ conf/Unix.mk
 
@@ -11,3 +13,5 @@ cp ./build/brssl /bin/
 cp ./build/obj/* /lib/
 
 make clean
+
+cd -
