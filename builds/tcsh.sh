@@ -6,7 +6,7 @@ env CC="/mnt/bin/tcc -s -static -g0" \
     RANLIB="echo" LIBS="-lcurses -lterminfo" ./configure --disable-rpath \
     --disable-nls --disable-nls-catalogs --prefix="/" --without-gnu-ld
 
-make -j($nproc)
+make -j$(nproc)
 make DESTDIR="/mnt/" install
 ln -sf tcsh /mnt/bin/csh
 make clean
