@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/sources/sbase/
+
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
     AR="/mnt/bin/tcc -ar" \
@@ -8,3 +10,5 @@ env CC="/mnt/bin/tcc -s -static -g0" \
 make -e PREFIX="/" DESTDIR="/mnt/" install
 ln -sf xinstall /mnt/bin/install
 make clean
+
+cd -
