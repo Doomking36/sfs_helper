@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /mnt/src/sources/make/
+
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
     AR="/mnt/bin/tcc -ar" \
@@ -9,3 +11,5 @@ env CC="/mnt/bin/tcc -s -static -g0" \
 make -j$(nproc)
 make DESTDIR="/mnt/" install
 make distclean
+
+cd -
