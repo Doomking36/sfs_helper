@@ -1,5 +1,7 @@
 #!/bin/csh
 
+cd /src/sources/tiny-curl/
+
 env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
     AR="/src/gcc-toolchain/bin/ar" RANLIB="/src/gcc-toolchain/bin/ranlib" \
     LDFLAGS="-s -static -g0 -L/lib -I/include" LD="echo" LIBS="-lbearssl -L/lib -I/include" \
@@ -28,3 +30,5 @@ make LDFLAGS="-s -static -all-static -g0" -j$(nproc) -i #if an error related wit
 make install -j$(nproc)
 make clean -j$(nproc)
 make distclean -j$(nproc)
+
+cd -
