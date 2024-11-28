@@ -12,3 +12,4 @@
 ./profile.sh
 ./toolchain.sh
 ./src.sh
+./extract.sh
