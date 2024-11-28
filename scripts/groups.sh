@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cat > groups <<EOF
+cat > /mnt/etc/groups <<EOF
 root:x:0
 bin:x:1
 
@@ -17,5 +17,3 @@ bin:x:1
 //video:x:27:root,dk
 //netdev:x:28:dk
 EOF
-
-mv groups /mnt/etc/
