@@ -1,5 +1,6 @@
 #!/bin/sh -e
 
+./partition.sh
 ./pre_packages.sh
 ./create_dir.sh
 ./mknod.sh
