@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+cd /mnt/src/packages
+
 # Search through directory to extract and delete .gz, .xz, and .zip 
 find . \( -name "*.tar.gz" -o -name "*.tar.xz" -o -name "*.zip" \) -exec sh -c '
   case "$1" in
@@ -7,3 +9,5 @@ find . \( -name "*.tar.gz" -o -name "*.tar.xz" -o -name "*.zip" \) -exec sh -c '
     *.zip) unzip "$1" ;;
   esac && rm "$1"
 ' sh {} \;
+
+cd -
