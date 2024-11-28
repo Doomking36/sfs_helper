@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cat > profile <<EOF
+cat > /mnt/etc/profile <<EOF
 #!/bin/csh
 #PATH
 
@@ -27,5 +27,3 @@ set prompt=" < %/ > -: "
 
 setenv TERM "linux"
 EOF
-
-mv profile /mnt/etc/
