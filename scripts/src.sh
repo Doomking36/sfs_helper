@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 mv sources.sh /mnt/src/
 cd /mnt/src/
