@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/csh
 
 cd /src/sources/e2fsprogs/
 
