@@ -2,7 +2,7 @@
 
 cd /mnt/src/packages/musl*/
 
-env CFLAGS="-Os -pipe -march=native" \
+env CFLAGS="-Os -march=native -pipe -s -static -g0" \
     CC="/mnt/src/gcc-toolchain/bin/gcc" \
     LDFLAGS="-s -static -g0" \
     AR="/mnt/src/gcc-toolchain/bin/ar"  \
