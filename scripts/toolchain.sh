@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 curl -s musl.cc | grep x86_64-linux-musl-native | xargs curl '-#' -fo /mnt/src/packages/x86_64-linux-musl-native.tgz \
 && mkdir -p /mnt/src/gcc-toolchain/ \
