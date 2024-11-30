@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 ./partition.sh
 ./pre_packages.sh
