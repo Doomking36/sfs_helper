@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 cat > /mnt/etc/groups <<EOF
 root:x:0
