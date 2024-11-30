@@ -2,9 +2,6 @@
 
 cd /src/sources/BearSSL/
 
-sed 's/cc/tcc/' conf/Unix.mk > _
-mv -f _ conf/Unix.mk
-
 make -e -j2
 
 cp ./inc/* /include/
