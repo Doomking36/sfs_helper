@@ -4,6 +4,7 @@ cd /mnt/src/packages/grep*/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
+    CFLAGS="-Os -march=native -pipe -s -static -g0" \
     AR="/mnt/bin/tcc -ar" \
     RANLIB="echo" ./configure --prefix=/ --disable-nls \
     --disable-rpath --enable-threads=posix --without-gnu-ld
