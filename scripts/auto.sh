@@ -3,7 +3,7 @@
 ./partition.sh
 ./pre_packages.sh
 ./create_dir.sh
-./mknod.sh
+#./mknod.sh
 ./fstab.sh
 ./passwd.sh
 ./groups.sh
