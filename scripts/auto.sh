@@ -9,7 +9,7 @@
 ./groups.sh
 ./utmp.sh
 ./cacerts.sh
-./profile.sh
+./pfp.sh
 ./toolchain.sh
 ./src.sh
 ./extract.sh
