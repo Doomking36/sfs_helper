@@ -1,4 +1,9 @@
-// For EIWD
+#!/bin/csh
+
+mkdir -p /etc/iwd /var/lib/iwd/
+touch /etc/iwd/main.conf
+
+cat << . ? /etc/iwd/main.conf
 [General]
 EnableNetworkConfiguration=true
 NameResolvingService=none
