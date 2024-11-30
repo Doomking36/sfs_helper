@@ -2,7 +2,7 @@
 
 cd /src/sources/libtls*/
 
-cut -d ',' -f 1 Makefile > _
+sed 's/,--version-script=libtls.ver//' Makefile > _
 mv -f _ Makefile
 make -j2
 
