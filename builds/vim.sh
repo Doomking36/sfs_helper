@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-cd /mnt/src/sources/vim
+cd /mnt/src/sources/vim/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     LDFLAGS="-s -static -g0" \
