@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 cat > /mnt/etc/passwd <<EOF
 root:x:0:0:root:/root:/bin/csh
