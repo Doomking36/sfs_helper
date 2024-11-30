@@ -13,3 +13,4 @@
 ./toolchain.sh
 ./src.sh
 ./extract.sh
+./bearssl.sh
