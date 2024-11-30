@@ -17,3 +17,4 @@
 ./gsed.sh
 ./ggrep.sh
 ./linux-headers.sh
+./vim.sh
