@@ -2,22 +2,22 @@
 
 mkdir -p ./packages ./sources
 
-curl_sources="https://musl-libc.org/releases/musl-1.2.3.tar.gz
+curl_sources="https://musl-libc.org/releases/musl-1.2.5.tar.gz
 	        http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-		https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
+		https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.xz
 		http://archive.ubuntu.com/ubuntu/pool/universe/e/e3/e3_2.82+dfsg.orig.tar.gz
-		ftp://ftp.astron.com/pub/tcsh/tcsh-6.24.07.tar.gz
-		ftp://ftp.gnu.org/pub/gnu/make/make-4.4.tar.gz
-		https://github.com/torvalds/linux/archive/refs/tags/v5.17-rc4.tar.gz
-		ftp://ftp.gnu.org/pub/gnu/sed/sed-4.9.tar.xz
-		ftp://ftp.gnu.org/pub/gnu/grep/grep-3.10.tar.xz
+		https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+		https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
+		https://github.com/torvalds/linux/archive/refs/tags/v6.12.tar.gz
+		https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
+		https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
 		https://sortix.org/libz/release/libz-1.2.8.2015.12.26.tar.gz
 		https://zlib.net/pigz/pigz-2.8.tar.gz
-		http://greenwoodsoftware.com/less/less-608.zip
+		https://greenwoodsoftware.com/less/less-668.zip
 		https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
-		https://curl.se/tiny/tiny-curl-7.79.1.tar.gz
-		https://github.com/tukaani-project/xz/releases/download/v5.6.2/xz-5.6.2.tar.gz
-		https://github.com/illiliti/eiwd/releases/download/2.14-1/iwd-2.14.tar.xz";
+		https://curl.se/tiny/tiny-curl-8.4.0.tar.gz
+		https://github.com/tukaani-project/xz/releases/download/v5.6.3/xz-5.6.3.tar.xz
+		https://github.com/illiliti/eiwd/releases/download/2.22-1/iwd-2.22.tar.xz";
 
 git_sources="https://github.com/TinyCC/tinycc
 	       https://github.com/michaelforney/sbase
@@ -29,7 +29,8 @@ git_sources="https://github.com/TinyCC/tinycc
 	       https://github.com/michaelforney/libtls-bearssl
                https://github.com/ecki/net-tools
 	       https://github.com/tytso/e2fsprogs
-               https://git.disroot.org/nyght/ninit";
+               https://git.disroot.org/nyght/ninit
+	       https://github.com/vim/vim";
 
 decoration() {
     i=1
