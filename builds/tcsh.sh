@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 cd /mnt/src/packages/tcsh*/
 
