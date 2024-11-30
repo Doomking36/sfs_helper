@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 # Create GPT partition table and partitions
 fdisk /dev/sda <<EOF
