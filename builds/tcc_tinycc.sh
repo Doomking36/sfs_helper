@@ -4,6 +4,7 @@ cd /mnt/src/sources/tinycc/
 
 env CC="/mnt/bin/tcc -s -static -g0 -L/mnt/lib/ -I/mnt/include" \
     LDFLAGS="-s -static -g0" \
+    CFLAGS="-Os -march=native -pipe -s -static -g0" \
     AR="/mnt/bin/tcc -ar"  \
     RANLIB="echo" \
 ./configure --config-musl --disable-rpath --enable-static \
