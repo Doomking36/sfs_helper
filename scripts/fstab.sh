@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 curl -LO https://raw.githubusercontent.com/cemkeylan/genfstab/refs/heads/master/genfstab
 chmod +x genfstab
