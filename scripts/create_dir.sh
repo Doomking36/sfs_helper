@@ -16,7 +16,7 @@ mkdir -p                  \
       /mnt/src/sources
 
 mount --bind /proc /mnt/proc
-#mount --bind /dev /mnt/dev
+mount --bind /dev /mnt/dev
 mount --bind /sys /mnt/sys
 mount --bind /etc/ssl/certs /mnt/etc/ssl/certs
 mount --bind /tmp /mnt/tmp
