@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cd /mnt/src/packages/sed*/
+cd /mnt/src/sources/sed/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     CFLAGS="-Os -march=native -pipe -s -static -g0" \
@@ -16,5 +16,3 @@ mv GSED/share/man/man1/sed.1 /mnt/share/man/man1/gsed.1
 
 rm -r ./GSED
 make distclean
-
-cd -
