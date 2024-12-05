@@ -15,5 +15,3 @@ done
 
 make CC="/mnt/src/gcc-toolchain/bin/gcc -s -static -g0" HOSTCC="/mnt/src/gcc-toolchain/bin/gcc -s -static -g0" ARCH="x86" distclean -j$(nproc)
 rm ./sed
-
-cd -
