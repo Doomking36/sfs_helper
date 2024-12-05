@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cd /mnt/src/packages/musl*/
+cd /mnt/src/sources/musl/
 
 env CFLAGS="-Os -march=native -pipe -s -static -g0" \
     CC="/mnt/src/gcc-toolchain/bin/gcc" \
@@ -15,5 +15,3 @@ env CFLAGS="-Os -march=native -pipe -s -static -g0" \
 make -j$(nproc)
 make DESTDIR="/mnt/" install
 make distclean
-
-cd -
