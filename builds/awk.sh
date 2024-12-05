@@ -14,5 +14,3 @@ env HOSTCC="/mnt/bin/tcc -s -static -g0" \
 strip -s ./a.out
 mv ./a.out /mnt/bin/awk
 make distclean
-
-cd -
