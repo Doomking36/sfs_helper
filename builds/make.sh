@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cd /mnt/src/packages/make*/
+cd /mnt/src/sources/make/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     CFLAGS="-Os -march=native -pipe -s -static -g0" \
@@ -12,5 +12,3 @@ env CC="/mnt/bin/tcc -s -static -g0" \
 make -j$(nproc)
 make DESTDIR="/mnt/" install
 make distclean
-
-cd -
