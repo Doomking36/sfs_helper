@@ -30,6 +30,7 @@ git_sources="https://github.com/TinyCC/tinycc
                https://github.com/ecki/net-tools
 	       https://github.com/tytso/e2fsprogs
                https://git.disroot.org/nyght/ninit
+	       https://github.com/michaelforney/cproc
 	       https://github.com/vim/vim";
 
 decoration() {
