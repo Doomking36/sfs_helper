@@ -16,5 +16,3 @@ env CC="/mnt/bin/tcc -s -static -g0 -L/mnt/lib/ -I/mnt/include" \
 make -j$(nproc)
 make DESTDIR="/mnt" install
 make distclean
-
-cd -
