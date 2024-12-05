@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-cd /mnt/src/packages/tcsh*/
+cd /mnt/src/sources/tcsh/
 
 env CC="/mnt/bin/tcc -s -static -g0" \
     CFLAGS="-Os -march=native -pipe -s -static -g0" \
@@ -18,5 +18,3 @@ make clean
 cat << . > /mnt/root/.cshrc
 source /etc/profile
 .
-
-cd -
