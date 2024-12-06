@@ -2,8 +2,8 @@
 
 cd /src/packages/tiny-curl*/
 
-env CC="tcc -Os -pipe -march=native -w -s -static -g0" \
-    AR="tcc -ar" RANLIB="tcc-ranlib" \
+env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
+    AR="/src/gcc-toolchain/bin/ar" RANLIB="/src/gcc-toolchain/bin/ranlib" \
     LDFLAGS="-s -static -g0 -L/lib -I/include" LD="echo" LIBS="-lbearssl -L/lib -I/include" \
     ./configure --prefix=/ --bindir=/bin --sbindir=/bin \
     --enable-unix-sockets --enable-symbol-hiding --disable-ipv6 \
