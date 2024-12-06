@@ -29,5 +29,3 @@ make LDFLAGS="-s -static -all-static -g0" -j2
 make install -j2
 make clean -j2
 make distclean -j2
-
-cd -
