@@ -7,7 +7,7 @@ env CC="/src/gcc-toolchain/bin/gcc -Os -pipe -march=native -w -s -static -g0" \
     LDFLAGS="-s -static -g0 -L/lib -I/include" LD="echo" LIBS="-lbearssl -L/lib -I/include" \
     ./configure --prefix=/ --bindir=/bin --sbindir=/bin \
     --enable-unix-sockets --enable-symbol-hiding --disable-ipv6 \
-    --disable-ldap --disable-ares --with-bearssl=/ \
+    --disable-ldap --disable-ares --with-bearssl=/ --without-ssl \
     --without-pic --without-librtmp \
     --without-icu --without-libpsl --without-libidn \
     --without-libidn2 --without-brotli --without-zstd \
