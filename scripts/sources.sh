@@ -3,20 +3,20 @@
 mkdir -p ./packages ./sources
 
 curl_sources="https://musl-libc.org/releases/musl-1.2.5.tar.gz
-	        http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-		https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.xz
+	    http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+		https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-3.01.tar.xz
 		http://archive.ubuntu.com/ubuntu/pool/universe/e/e3/e3_2.82+dfsg.orig.tar.gz
-		https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+		https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
 		https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
 		https://github.com/torvalds/linux/archive/refs/tags/v6.12.tar.gz
 		https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
-		https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
-		https://sortix.org/libz/release/libz-1.2.8.2015.12.26.tar.gz
+		https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz
+		https://pub.sortix.org/libz/libz-1.2.8.2025.03.07.tar.gz
 		https://zlib.net/pigz/pigz-2.8.tar.gz
-		https://greenwoodsoftware.com/less/less-668.zip
+		https://www.greenwoodsoftware.com/less/less-685.zip
 		https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 		https://curl.se/tiny/tiny-curl-8.4.0.tar.gz
-		https://github.com/tukaani-project/xz/releases/download/v5.6.3/xz-5.6.3.tar.xz
+		https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz
 		https://github.com/illiliti/eiwd/releases/download/2.22-1/iwd-2.22.tar.xz";
 
 git_sources="https://github.com/TinyCC/tinycc
@@ -27,9 +27,9 @@ git_sources="https://github.com/TinyCC/tinycc
 	       https://github.com/onetrueawk/awk
 	       https://www.bearssl.org/git/BearSSL
 	       https://github.com/michaelforney/libtls-bearssl
-               https://github.com/ecki/net-tools
+           https://github.com/ecki/net-tools
 	       https://github.com/tytso/e2fsprogs
-               https://git.disroot.org/nyght/ninit
+           https://git.disroot.org/nyght/ninit
 	       https://github.com/michaelforney/cproc
 	       https://github.com/vim/vim";
 
