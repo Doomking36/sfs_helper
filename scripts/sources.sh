@@ -4,7 +4,7 @@ mkdir -p ./packages ./sources
 
 curl_sources="https://musl-libc.org/releases/musl-1.2.5.tar.gz
 	    http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-		https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-3.01.tar.xz
+		https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01.tar.xz
 		http://archive.ubuntu.com/ubuntu/pool/universe/e/e3/e3_2.82+dfsg.orig.tar.gz
 		https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
 		https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
